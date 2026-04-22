@@ -3,8 +3,11 @@ To ensure transparency and reproducibility of this study, a comprehensive replic
 
 ## Environment Requirements
 R: Version 4.x
+
 Python (Code Counting): Version 3.9.12
+
 Python (Frequency Analysis): Version 3.12.12
+
 Python (Random Generator): Version 3.9.12
 
 ## Contents
