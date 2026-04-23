@@ -12,14 +12,46 @@ Python (Frequency Analysis): Version 3.12.12
 Python (Random Generator): Version 3.9.12
 
 ## Contents
-**Data Files:** Anonymized CSV datasets containing self-reported student gaming habits paired with final grades retreived from course records.
 
-**PDF copy of the *A Gaming* Survey:** This document contains the original questions and multiple-choice options exactly as they appeared to the participants on the Canvas platform.
+### Data
+**Folder Structure**
+
+```
+/ Survey - A Gaming
+│
+├── Gaming_Survey.pdf
+│
+└── Student_Responses/
+    ├── FA/  — Four Fall semester CSV files (one per year)
+    └── SP/  — Four Spring semester CSV files (one per year)
+```
+
+**Data Files:** Anonymized CSV datasets containing self‑reported student gaming habits paired with final course grades. All identifiers were removed prior to inclusion.
+
+**Survey Instrument:** A PDF copy of the original Gaming Survey as delivered on Canvas, including all questions and multiple‑choice options exactly as presented to participants.
 
 ### Quantitative
 **Quantitative Analysis Scripts:** R scripts used for statistical testing (ANOVA, Chi-square, and Spearman correlation) and the generation of descriptive visualizations.
 
 ### Qualitative
+**Folder Structure**
+```
+/ Qualitative
+│
+├── Keywords_and_Phrases_Reference_Map.pdf
+│
+├── Qualitative_Analysis_Scripts/
+│   ├── GenerateAuditIndexes.ipynb
+│   ├── CountCodes.ipynb
+│   └── FrequencyFinding.ipynb
+│
+└── LLM_Outputs/
+    ├── Raw_Outputs/
+    │   └── Eight semester CSV files (one per term)
+    └── Audited_Outputs/
+        └── Eight semester CSV files (one per term)
+```
+
 **Qualitative Analysis Scripts:** Python scripts used for thematic code counting, calculating code frequencies for low‑ and high‑frequency gamers across cohorts, and generating the random index sample used to select 25% of rows for manual verification.
 
 **Comprehensive Codebook:** The finalized codebook which contains eight primary themes and twenty‑eight sub‑codes, each defined and illustrated with an example quote. These codes capture students’ gaming habits, study behaviors, motivations, time‑management strategies, and perceptions of learning. The codebook represents the final structure developed through iterative refinement and serves as the reference framework for all qualitative analyses reported in the study.
