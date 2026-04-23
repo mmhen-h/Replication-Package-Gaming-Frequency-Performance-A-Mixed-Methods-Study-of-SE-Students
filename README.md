@@ -25,3 +25,5 @@ Python (Random Generator): Version 3.9.12
 **LLM Automation Protocol:** The prompts used with Gemini 3 Pro for the second phase (deductive coding), including instructions for data cleaning and markdown-based keyword bolding.
 
 **LLM Outputs:** Both the raw CSV outputs and the CSVs after the 25\% random sample audit.
+
+**PDF copy of the *A Gaming* Survey:** This document contains the original questions and multiple-choice options exactly as they appeared to the participants on the Canvas platform.
