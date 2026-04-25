@@ -84,9 +84,23 @@ To ensure the scripts run correctly, please use the following environments:
 
 ### Qualitative Analysis
 #### Phase 1: Manual Coding and Framework Development
+- Reference: Consult the ```/Phase_1_Manual_Coding/``` directory and ```Comprehensive_Codebook.xlsx```.
+- Logic: This phase involved the manual inductive coding of the SP25 and FA25 cohorts.
+- Goal: Establishing the 8 primary themes and 28 sub-codes that serve as the foundational logic for the entire qualitative stream.
 
 #### Phase 2: Systematic Scaling (Automation)
+- Reference: Utilize the ```LLM_Automation_Protocol.md``` and ```Keywords_and_Phrases_Reference_Map.pdf```.
+- Logic: Apply the established codebook deductively to the remaining six semesters (FA22–SP24) using Gemini 3 Pro.
+- Source: The resulting data is stored in ```Qualitative/LLM_Outputs/Raw_Outputs/```.
 
 #### Phase 3: Manual Audit
-
+- Execution: Run ```Qualitative_Analysis_Scripts/GenerateAuditIndexes.ipynb```.
+- Logic: Employs a fixed seed (random_state=42) to reproduce the 25% stratified random sample for manual verification.
+- Verification: Review files in ```Qualitative/LLM_Outputs/Audited_Outputs/```:
+  - Yellow Highlights: Rows randomly selected to audit LLM coding against the manual Codebook.
+  - Light Orange Highlights (SP only): Rows originally marked as UNCODED that were not part of the random sample
+    
 #### Phase 4: Frequency
+- Execution: For the initial manually coded cohorts (SP25 + FA25), analysis was conducted via ```CountCodes.ipynb``` and ```FrequencyFinding.ipynb```. However, for the full longitudinal dataset, the exhaustive frequency sorting and code counting were transitioned to Gemini 3 Pro using the prompts documented in ```LLM_Automation_Protocol.md```.
+- Logic: This transition ensures that the counting and sorting logic developed in the Python scripts was scaled consistently across all eight semesters. The LLM processes the exhaustive coded files to aggregate occurrences of the 28 codes according to the established framework.
+- Goal: Quantify the prevalence of specific teamwork competencies and barriers to identify differences in perceived skill transference between Low-Frequency (0–3 days/week) and High-Frequency (4–7 days/week) gamers.
