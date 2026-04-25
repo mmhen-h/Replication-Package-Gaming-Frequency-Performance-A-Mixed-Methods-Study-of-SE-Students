@@ -2,6 +2,53 @@
 ## *Gaming Frequency Performance: A Mixed-Methods Study of Software Engineering Students*
 To ensure transparency and reproducibility of this study, a comprehensive replication package has been made available. This repository contains the data and scripts required to reproduce the analysis of the relationship between gaming habits and academic performance in an undergraduate software engineering course.
 
+**Repository Structure**
+```
+Replication_Package/
+├── README.md                                           # Usage instructions and environment requirements
+│
+├── Qualitative/
+│   ├── Comprehensive_Codebook.xlsx                     # 8 primary themes and 28 sub-codes with definitions
+│   ├── LLM_Automation_Protocol.md                      # Gemini 3 Pro prompts and data cleaning instructions
+│   ├── Keywords_and_Phrases_Reference_Map.pdf          # Mapping used for LLM deductive coding
+│   ├── Qualitative_Analysis_Scripts/
+│   │   ├── GenerateAuditIndexes.ipynb                  # Reproduces 25% stratified random sample
+│   │   ├── CountCodes.ipynb                            # Aggregates thematic code totals
+│   │   └── FrequencyFinding.ipynb                      # Calculates number of low- vs. high-frequency rows
+│   └── LLM_Outputs/
+│       ├── Raw_Outputs/                                # CSVs coded by Gemini 3 Pro (SP22-FA24)
+|       │   ├── FA22_Exhaustive_Coded.csv               
+|       │   ├── FA23_Exhaustive_Coded.csv               
+|       │   ├── FA24_Exhaustive_Coded.csv               
+|       │   ├── SP22_Exhaustive_Coded.csv               
+|       │   ├── SP23_Exhaustive_Coded.csv               
+|       │   └── SP24_Exhaustive_Coded.csv               
+│       └── Audited_Outputs/                            # Post-Audit CSVs coded by Gemini 3 Pro (SP22-FA24)
+|       │   ├── AUDITEDFA22_Exhaustive_Coded.csv               
+|       │   ├── AUDITEDFA23_Exhaustive_Coded.csv               
+|       │   ├── AUDITEDFA24_Exhaustive_Coded.csv               
+|       │   ├── AUDITEDSP22_Exhaustive_Coded.csv               
+|       │   ├── AUDITEDSP23_Exhaustive_Coded.csv               
+|       │   └── AUDITEDSP24_Exhaustive_Coded.csv      
+│
+├── Quantitative/
+│   ├── 
+│
+└── Survey - A Gaming/
+    ├── Gaming_Survey.pdf                               # Original Canvas survey instrument instrument
+    └── Student_Responses/
+        ├── FA/                                         # Original anonymized data (Fall 2022–2025)
+        │   ├── FA22_Responses.csv
+        │   ├── FA23_Responses.csv
+        │   ├── FA24_Responses.csv
+        │   └── FA25_Responses.csv
+        └── SP/                                         # Original anonymized data (Spring 2022–2025)
+            ├── SP22_Responses.csv
+            ├── SP23_Responses.csv
+            ├── SP24_Responses.csv
+            └── SP25_Responses.csv
+```
+
 ## Environment Requirements
 R: Version 
 
@@ -14,18 +61,6 @@ Python (Random Generator): Version 3.9.12
 ## Contents
 
 ### Data
-**Folder Structure**
-
-```
-/ Survey - A Gaming
-│
-├── Gaming_Survey.pdf
-│
-└── Student_Responses/
-    ├── FA/  — Four Fall semester CSV files (one per year)
-    └── SP/  — Four Spring semester CSV files (one per year)
-```
-
 **Data Files:** Anonymized CSV datasets containing self‑reported student gaming habits paired with final course grades. All identifiers were removed prior to inclusion.
 
 **Survey Instrument:** A PDF copy of the original Gaming Survey as delivered on Canvas, including all questions and multiple‑choice options exactly as presented to participants.
@@ -34,23 +69,6 @@ Python (Random Generator): Version 3.9.12
 **Quantitative Analysis Scripts:** R scripts used for statistical testing (ANOVA, Chi-square, and Spearman correlation) and the generation of descriptive visualizations.
 
 ### Qualitative
-**Folder Structure**
-```
-/ Qualitative
-│
-├── Keywords_and_Phrases_Reference_Map.pdf
-│
-├── Qualitative_Analysis_Scripts/
-│   ├── GenerateAuditIndexes.ipynb
-│   ├── CountCodes.ipynb
-│   └── FrequencyFinding.ipynb
-│
-└── LLM_Outputs/
-    ├── Raw_Outputs/
-    │   └── Eight semester CSV files (one per term)
-    └── Audited_Outputs/
-        └── Eight semester CSV files (one per term)
-```
 
 **Qualitative Analysis Scripts:** Python scripts used for thematic code counting, calculating code frequencies for low‑ and high‑frequency gamers across cohorts, and generating the random index sample used to select 25% of rows for manual verification.
 
