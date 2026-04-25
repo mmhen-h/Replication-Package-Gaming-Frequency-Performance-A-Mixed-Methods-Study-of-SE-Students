@@ -15,6 +15,9 @@ Replication_Package/
 │   │   ├── GenerateAuditIndexes.ipynb                  # Reproduces 25% stratified random sample
 │   │   ├── CountCodes.ipynb                            # Aggregates thematic code totals
 │   │   └── FrequencyFinding.ipynb                      # Calculates number of low- vs. high-frequency rows
+│   └── Phase_1_Manually_Coded/                         # Baseline manual coding for Phase 1, used to calibrate LLM prompts for Phase 2
+│   │   ├── FA25_Manually_Coded.xlsx
+│   │   └── SP25_Manually_Coded.xlsx
 │   └── LLM_Outputs/
 │       ├── Raw_Outputs/                                # CSVs coded by Gemini 3 Pro (SP22-FA24)
 |       │   ├── FA22_Exhaustive_Coded.csv               
@@ -76,3 +79,13 @@ To ensure the scripts run correctly, please use the following environments:
   - Light Orange Highlight (SP Cohorts Only): Rows originally marked as UNCODED that were not part of the random 25% sample
  
 ## Workflow Instructions
+### Quantitative Analysis
+
+### Qualitative Analysis
+#### Phase 1: Manual Coding and Framework Development
+
+#### Phase 2: Systematic Scaling (Automation)
+
+#### Phase 3: Manual Audit
+
+#### Phase 4: Frequency
