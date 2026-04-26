@@ -104,5 +104,6 @@ To ensure the scripts run correctly, please use the following environments:
     
 #### Phase 4: Frequency
 - Execution: For the initial manually coded cohorts (SP25 + FA25), analysis was conducted via ```CountCodes.ipynb``` and ```FrequencyFinding.ipynb```. However, for the full longitudinal dataset, the exhaustive frequency sorting and code counting were transitioned to Gemini 3 Pro using the prompts documented in ```LLM_Automation_Protocol.md```.
+- Final Output: The results of this automated scale-up are consolidated in ```Frequency_Analysis_Audited_Final.csv```.
 - Logic: This transition ensures that the counting and sorting logic developed in the Python scripts was scaled consistently across all eight semesters. The LLM processes the exhaustive coded files to aggregate occurrences of the 28 codes according to the established framework.
 - Goal: Quantify the prevalence of specific teamwork competencies and barriers to identify differences in perceived skill transference between Low-Frequency (0–3 days/week) and High-Frequency (4–7 days/week) gamers.
