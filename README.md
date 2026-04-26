@@ -58,7 +58,7 @@ Replication_Package/
 │            ├── SP24_Responses.csv
 │            └── SP25_Responses.csv
 │            
-└── cleaned_dataset_for_quantitative_analysis           # This is the data with only gaming frequency and final score for quantitative analysis
+└── cleaned_dataset_for_quantitative_analysis/           # This is the data with only gaming frequency and final score for quantitative analysis
     ├── FA22_Cleaned_Data.csv
     ├── FA23_Cleaned_Data.csv
     ├── FA24_Cleaned_Data.csv
