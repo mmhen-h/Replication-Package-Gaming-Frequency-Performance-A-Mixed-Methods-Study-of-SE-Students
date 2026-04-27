@@ -73,10 +73,10 @@ Replication_Package/
 ## Environment Requirements
 To ensure the scripts run correctly, please use the following environments:
 
-- **Statistical Analysis:** Python3.9
+- **Statistical Analysis:** Python 3.9
 - **Qualitative Code Counting and Random Sample Generator:** Python 3.9.12
 - **Qualitative Frequency Splitter:** Python 3.12.12
-- **Necessary Python Libraries:** pandas, numpy
+- **Necessary Python Libraries:** pandas, numpy, matplotlib
 
 ## Contents
 
