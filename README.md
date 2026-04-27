@@ -117,13 +117,7 @@ To ensure the scripts run correctly, please use the following environments:
 - Execution: Automated via `main.py` using functions like `plot_mean_score_per_frequency()`, `plot_mean_score_per_frequency_bin()`, `bar_plot_data_bin()`, and `bar_plot_data()`.
 - Logic: Generates descriptive visualizations, including line charts for mean final grade trends and bar plots for frequency distribution.
 - Output: Saves high-resolution figures (e.g., `gaming_freq_distribution.pdf`) used in the final manuscript.
-
-### Qualitative Analysis
-#### Phase 1: Manual Coding and Framework Development
-- Reference: Consult the `/Phase_1_Manual_Coding/` directory and `Comprehensive_Codebook.xlsx`.
-- Logic: This phase involved the manual inductive coding of the SP25 and FA25 cohorts.
-- Goal: Establishing the 8 primary themes and 28 sub-codes that serve as the foundational logic for the entire qualitative stream.
-
+  
 ### Qualitative Analysis
 #### Phase 1: Manual Coding and Framework Development
 - Reference: Consult the ```/Phase_1_Manual_Coding/``` directory and ```Comprehensive_Codebook.xlsx```.
