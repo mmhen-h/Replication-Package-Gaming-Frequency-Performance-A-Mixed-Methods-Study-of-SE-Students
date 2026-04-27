@@ -35,7 +35,7 @@ Replication_Package/
 |       │   ├── AUDITED_SP23_Exhaustive_Coded.csv               
 |       │   └── AUDITED_SP24_Exhaustive_Coded.csv      
 │
-├── Quantitative/                                       # This folder is contains the statistical tests and plots
+├── Quantitative/                                       # This folder contains the scripts to conduct statistical tests and plots
 │   ├── chi_square.py
 │   ├── data_prepration.py
 │   ├── logistice_regression.py
