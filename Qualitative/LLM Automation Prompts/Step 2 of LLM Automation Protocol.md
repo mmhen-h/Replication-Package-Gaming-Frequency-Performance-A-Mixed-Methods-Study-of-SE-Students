@@ -1,4 +1,4 @@
-## Step 2: Coding and Analysis
+# Step 2: Coding and Analysis
 
 **Prompt 5**
 - Next is Step 2: Coding and Analysis. Here are the instructions:
