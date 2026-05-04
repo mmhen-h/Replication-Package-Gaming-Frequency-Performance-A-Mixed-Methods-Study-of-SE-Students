@@ -1,6 +1,6 @@
 ## Step 2: Coding and Analysis
 
-**Prompt 4**
+**Prompt 5**
 - Next is Step 2: Coding and Analysis. Here are the instructions:
 Use the Keyword Reference Map we provided below in the prompt to assign subcodes.
 
@@ -14,15 +14,9 @@ Markdown Highlighting: In the response column, bold only the keyword or a keyphr
 
 - Example(keyphrase): If a response is "Learning *to operate in teams to achieve some goal is the basis of teamwork*. This is used in any scenario in video games where teams are involved *regardless of voice chat, text chat, or any form of communication*,"CLB-MNG should only bold the phrase "to operate in teams to achieve some goal is the basis of teamwork", and the row for COM-EFF should only bold the phrase "regardless of voice chat, text chat, or any form of communication".
 
-
-
 We have also attached a CSV named CODEDgaming25fa1.csv, where a human manually coded the responses as an example.
-
-
 Keyword Reference Map (edited to include keywords and phrases from manually coded CSVs)
-
 Assign subcodes based on these specific phrases:
-
 
 Teamwork Competencies
 
@@ -92,6 +86,18 @@ DEV-NRL (Not Real Life): don't translate, real-life, real world, useless outside
 
 DEV-VCM (Vacuum): vacuum, no external meaning, pointless, waste of time, meaningless, just a game, no real-world application, waste of effort, relief game
 
-Please start with FA22_Cleaned_Data.csv
+Please start with FA22_Cleaned_Categorized_Data.csv
 
-**Results of Prompt 4** 
+**Results of Prompt 5** 
+- We did receive the spreadsheet we were anticipating as "FA22_Exhaustive_Coded.csv" along with a coding summary:
+  -  Fall 2022 Coding Summary:
+    - Total Cleaned Responses: 97
+    - Total Rows After Expansion: 254
+    - Methodology: Every response was scanned against the Keyword Reference Map. For each subcode identified, the row was duplicated, and only the relevant trigger keyword for that specific code was bolded
+
+**Prompt 6**
+- Proceed with these instructions for the following semesters
+
+**Results for Prompt 6**
+- We recevied the remaining spreadsheets we wanted as "[semester][year]_Exhaustive_coded.csv" along with a coding summary table:
+- <img width="550" height="587" alt="Screenshot 2026-05-04 at 16 59 00" src="https://github.com/user-attachments/assets/82b5a907-fca0-4d46-97f6-8959411e00b2" />
